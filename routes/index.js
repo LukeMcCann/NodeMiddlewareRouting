@@ -6,7 +6,7 @@
 const routes = require('express').Router();
 const models = require('./models');
 
-// Attach the model routes to the Router
+// Attach the model routes to the main Router
 routes.use('/models', models);
 
 // Create basic route showing our router is connected
