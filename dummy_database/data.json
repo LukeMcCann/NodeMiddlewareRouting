@@ -1,0 +1,43 @@
+{
+    "models": [
+        {
+            "id": 1, 
+            "name": "Schecter"
+        },
+        {
+            "id": 2, 
+            "name": "Jackson"
+        }
+    ],
+    "guitars": [
+        {
+            "id": 1,
+            "name": "Demon-7"
+        },
+        {
+            "id": 2,
+            "name": "Silver Mountain C8",
+            "modelId": 1
+        },
+        {
+            "id": 3, 
+            "name": "DK2QM",
+            "modelId": 2
+        },
+        {
+            "id": 4,
+            "name": "Hellraiser",
+            "modelId": 1
+        },
+        {
+            "id": 5, 
+            "name": "Banshee",
+            "modelId": 1
+        },
+        {
+            "id": 6, 
+            "name": "Soloist",
+            "modelId": 2
+        }
+    ]
+}
