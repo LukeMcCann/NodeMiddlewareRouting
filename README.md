@@ -1,3 +1,11 @@
+# To run this project
+
+First you will need to install the project dependencies via: npm install
+
+once installed, you can simply use the command: node app.js
+
+if you have nodemon installed globally run: nodemon app
+
 # Routing in Node
 
 # Introduction
