@@ -49,3 +49,7 @@ First we import Express and create a new instance of the Express Router. The Exp
 This Router instance is stored in a variable called routes. Then a route is created at the root path of this Router which sends back a HTTP 200 status, and simple JSON message. The router is then exported. This router is then imported in the main app.js file. 
 
 By attaching this router to our root path the callback function will be triggered when any request hits our route path. Imagine this, a user sends a request to "/". Since we have imported our routes file, and our routes file contains a endpoint for the project root path "/", the callback for the endpoint of our imported rotues file will also fire. 
+
+### Param Middleware
+
+Param middleware is called whenever the parameter provided is present. In this project we use this for modelId, this means that whenever a modelId is present in the URL we run our middleware, in this middleware we check for a model which has and id equal to the modelId in the URL. If there is a model we set our request model to be this model and run the next() piece of middleware, otherwise we return a 404 error code. 
