@@ -5,9 +5,11 @@
 // on this route.
 const routes = require('express').Router();
 const models = require('./models');
+const guitars = require('./guitars');
 
-// Attach the model routes to the main Router
+// Attach the sub Routers to the main Router
 routes.use('/models', models);
+routes.use('/guitars', guitars);
 
 // Create basic route showing our router is connected
 routes.get('/', (req, res) => {
