@@ -3,9 +3,10 @@
 const app = require('express')();
 require('dotenv').config();
 
-const routes = require('./routes');
-
 const port = process.env.PORT || 3000;
+
+// Require routes
+const routes = require('./routes');
 
 // Attach routes middleware
 app.use('/', routes);
